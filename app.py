@@ -7,8 +7,8 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # 발급받으신 토큰과 시크릿 입력
-line_bot_api = LineBotApi(yUtAB4CZAJkzOhjku7/nbWrdx2u4TJNwcfDbgIfQEHBLNxazsOEG67Nr0M917Or6cqAA4Bik6XGJluDdKxqoK8W5+VwuJ6W4JG0yLdKnjksrTfA3OjCcIvrl0hFkTGWPTRolt1e2Vb+G6hpjM73t3wdB04t89/1O/w1cDnyilFU=)
-handler = WebhookHandler(2b4ca1bdd850e26f1da6e85a847b3034)
+line_bot_api = LineBotApi('yUtAB4CZAJkzOhjku7/nbWrdx2u4TJNwcfDbgIfQEHBLNxazsOEG67Nr0M917Or6cqAA4Bik6XGJluDdKxqoK8W5+VwuJ6W4JG0yLdKnjksrTfA3OjCcIvrl0hFkTGWPTRolt1e2Vb+G6hpjM73t3wdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('2b4ca1bdd850e26f1da6e85a847b3034')
 
 # 유저별 상태와 시작 시간을 기억할 공간
 # 예: { "user_id": { "group": "group1", "start_time": datetime객체 } }
